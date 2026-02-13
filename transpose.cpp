@@ -1,23 +1,22 @@
 #include<stdio.h>
 int main()
 { 
- int a[2][2],i,j;
- printf("enter array elements:\n");
- for(i=0;i<2;i++)
+ int a[10][10],i,j,r,c;
+ scanf("%d%d",&r,&c);
+ for(i=0;i<r;i++)
  {
- 	for(j=0;j<2;j++)
+ 	for(j=0;j<c;j++)
  	{
-	 
- 	scanf("%d",&a[i][j]);
+ 	 scanf("%d",&a[i][j]);
     }
  }
- for(i=0;i<2;i++)
+ for(i=0;i<r;i++)
  {
- 	for(j=0;j<2;j++)
+ 	for(j=0;j<c;j++)
  	{
  		printf("%d ",a[j][i]);
 	 }
-	 printf("\n");
+	 printf("\n"); 
     }
  	
  return 0;
